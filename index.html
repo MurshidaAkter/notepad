@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Pad</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Cutive+Mono&family=Delius&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+
+    
+
+</head>
+<body>
+    <div class="note-container flex">
+        <!-- notes will be kept as cards -->
+
+        <div class="header flex">
+            <h1>All Notes</h1>
+            <p id="totalNotes">0 notes</p>
+        </div>
+
+        <div class="nav-menu">
+            <span class="icon" id="deleteAll"><i class="nav-icon fa fa-trash"> </i> </span>
+
+        </div>
+
+        <form class="note-form flex">
+
+            <input type="text" id="inputTitle" class="inputArea" placeholder="Title : " required>
+
+            <textarea  name="inputNote" id="inputNote" class="inputArea" required> Write notes here..
+            </textarea>
+
+            <button type="submit" class="btn" id="addNoteButton">
+              +
+            </button>
+        </form>
+
+        <div class="card-container">
+
+        </div>
+
+        <p id="emptyMsg"></p>
+        <p id="msg" class="bg"></p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
